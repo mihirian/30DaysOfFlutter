@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:mtechviral/widgets/drawer.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -6,7 +7,6 @@ class HomePage extends StatelessWidget {
   final String names = "Codepur";
   @override
   Widget build(BuildContext context) {
-    
     return Scaffold(
       appBar: AppBar(
         title: Text('Catalog App'),
@@ -16,7 +16,7 @@ class HomePage extends StatelessWidget {
           child: Text("Welcome to $days of flutter by $names"),
         ),
       ),
-      drawer: Drawer(),
+      drawer: MyDrawer(),
     );
   }
 }
